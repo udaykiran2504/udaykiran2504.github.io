@@ -239,5 +239,11 @@ footer {
   color: #ccc;
   margin-top: 2rem;
 }
+.role {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fbbf24;
+  min-height: 2rem;
+}
 
 
