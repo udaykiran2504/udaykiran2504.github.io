@@ -111,10 +111,11 @@ h1 span {
 }
 
 .btn.yellow {
-  background-color: #fbbf24;
-  color: #000000; /* BLACK text */
+  background-color: #fbbf24 !important;
+  color: #000 !important;        /* This forces black text */
   border: none;
   font-weight: 600;
+  text-decoration: none;
 }
 
 
