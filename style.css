@@ -111,10 +111,11 @@ h1 span {
 }
 
 .btn.yellow {
-  background-color: #fbbf24;
-  color: #0d0d0d;
+  background-color: #fbbf24 !important;
+  color: #0d0d0d !important;
   border: none;
 }
+
 
 .btn.black {
   background-color: transparent;
