@@ -58,8 +58,8 @@ p {
 }
 .hero-img img,
 .about-left img {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* optional: adds soft shadow */
