@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 <body>
   <nav class="navbar">
@@ -24,7 +26,10 @@
     <div class="hero-text">
       <p class="hello">HELLO!</p>
       <h1>I'm <span>Uday Kiran Dasari</span></h1>
-      <p class="role">Aspiring Data Analyst</p>
+      <p class="role">
+  <span id="typed-text"></span>
+</p>
+
       <p class="tagline">Empowering Businesses Through Data Driven Strategies</p>
       <div class="buttons">
         <a href="https://www.linkedin.com/in/uday-kiran-dasari-998760356/" class="btn yellow">LinkedIn</a>
@@ -122,5 +127,15 @@
   <footer>
     <p>&copy; 2025 Uday Kiran Dasari</p>
   </footer>
+  <script>
+  var typed = new Typed("#typed-text", {
+    strings: ["Aspiring Data Analyst", "Content Creator", "Prompt engineer"],
+    typeSpeed: 60,
+    backSpeed: 30,
+    backDelay: 2000,
+    loop: true
+  });
+</script>
+
 </body>
 </html>
