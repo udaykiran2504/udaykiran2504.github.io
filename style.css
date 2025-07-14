@@ -194,6 +194,10 @@ h1 span {
   color: #fbbf24;
   font-size: 2rem;
 }
+.projects .more {
+  text-align: center;
+  margin-top: 1rem;
+}
 
 .projects .more a {
   color: #fbbf24;
@@ -214,6 +218,14 @@ h1 span {
 .contact .social {
   text-align: center;
   margin-top: 1.5rem;
+}
+.contact .social {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.contact .social .btn {
+  margin: 10px;
 }
 
 
