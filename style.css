@@ -56,6 +56,12 @@ p {
   padding: 4rem 8%;
   background-color: #111;
 }
+.hero-img img,
+.about-left img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 
 .hero-text {
   flex: 1;
