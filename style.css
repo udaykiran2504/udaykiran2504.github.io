@@ -1,115 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uday Kiran Dasari | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Header Section -->
-  <header class="hero">
-    <div class="hero-text">
-      <p class="hello">HELLO!</p>
-      <h1>I'm <span>Uday Kiran Dasari</span></h1>
-      <p class="role">Aspiring Data Analyst</p>
-      <p class="tagline">Empowering Businesses Through Data Driven Strategies</p>
-      <div class="buttons">
-        <a href="https://www.linkedin.com/in/uday-kiran-dasari-998760356/" class="btn yellow">LinkedIn</a>
-        <a href="https://github.com/udaykiran2504" class="btn black">GitHub</a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <img src="assets/uday-photo.jpg" alt="Uday Photo">
-    </div>
-  </header>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="about-left">
-      <img src="assets/uday-photo.jpg" alt="Uday">
-      <ul>
-        <li><strong>Name:</strong> Uday Kiran Dasari</li>
-        <li><strong>Job Role:</strong> Data Analyst & Engineer</li>
-        <li><strong>Experience:</strong> Aspiring Data Analyst</li>
-        <li><strong>Address:</strong> India</li>
-      </ul>
-      <h3>Tech Stack:</h3>
-      <div class="skill-bar"><span>SQL</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
-      <div class="skill-bar"><span>Python</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
-      <div class="skill-bar"><span>Data Visualization</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
-      <div class="skill-bar"><span>Statistical Analysis</span><div class="bar"><div class="fill" style="width: 85%"></div></div></div>
-      <div class="skill-bar"><span>Excel</span><div class="bar"><div class="fill" style="width: 90%"></div></div></div>
-      <div class="skill-bar"><span>Machine Learning</span><div class="bar"><div class="fill" style="width: 75%"></div></div></div>
-      <div class="skill-bar"><span>Generative AI</span><div class="bar"><div class="fill" style="width: 50%"></div></div></div>
-    </div>
-    <div class="about-right">
-      <h2>About Me</h2>
-      <p>I’m a passionate data enthusiast who thrives on turning raw information into actionable insights. I enjoy exploring trends, creating data stories, and enabling data-driven decisions using my skills in SQL, Python, Visualization, and Analytics.</p>
-      <ul class="details">
-        <li><strong>Profile:</strong> Data Science & Analytics</li>
-        <li><strong>Domain:</strong> Supply Chain, Operations, HR, Ecommerce, BFSI & Marketing</li>
-        <li><strong>Education:</strong> Bachelor of Engineering</li>
-        <li><strong>Languages:</strong> English, Hindi, Telugu</li>
-        <li><strong>BI Tools:</strong> Power BI, Looker, Tableau</li>
-        <li><strong>Other Skills:</strong> Excel, Git, JIRA, Cloud, Google Analytics</li>
-        <li><strong>Interests:</strong> Photography, Content Creation</li>
-      </ul>
-      <p><strong>10+</strong> Projects completed</p>
-    </div>
-  </section>
+body {
+  background-color: #0d0d0d;
+  color: #fff;
+  line-height: 1.6;
+}
 
-  <!-- Resume Section -->
-  <section class="resume" id="resume">
-    <h2>Resume</h2>
-    <p>Download CV below to know more about my academic and professional background.</p>
-    <a class="btn yellow" href="resume.pdf" download>Download CV</a>
-  </section>
+section, header {
+  padding: 4rem 8%;
+}
 
-  <!-- Projects Section -->
-  <section class="projects" id="projects">
-    <h2>Projects</h2>
-    <div class="project-cards">
-      <div class="card">
-        <h3>10</h3><p>Achievements</p>
-      </div>
-      <div class="card">
-        <h3>15</h3><p>Projects</p>
-      </div>
-      <div class="card">
-        <h3>500</h3><p>Content Created</p>
-      </div>
-      <div class="card">
-        <h3>2</h3><p>Ongoing Projects</p>
-      </div>
-    </div>
-    <p class="more">More projects on <a href="https://github.com/udaykiran2504">GitHub</a></p>
-  </section>
+h1, h2, h3 {
+  font-weight: 700;
+}
 
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-      <div>
-        <p><strong>Address:</strong> India</p>
-      </div>
-      <div>
-        <p><strong>Email:</strong> uday.kiran@example.com</p>
-      </div>
-      <div>
-        <p><strong>Resume:</strong> <a href="resume.pdf" download>Download</a></p>
-      </div>
-    </div>
-    <div class="social">
-      <a href="https://www.linkedin.com/in/uday-kiran-dasari-998760356/">LinkedIn</a>
-      <a href="https://github.com/udaykiran2504">GitHub</a>
-    </div>
-  </section>
+h1 span {
+  color: #fbbf24;
+}
 
-  <footer>
-    <p>&copy; 2025 Uday Kiran Dasari</p>
-  </footer>
-</body>
-</html>
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text .hello {
+  color: #fbbf24;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+}
+
+.hero-img {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn.yellow {
+  background-color: #fbbf24;
+  color: #000;
+}
+
+.btn.black {
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about-left, .about-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-left img {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-left ul, .about-right ul.details {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.skill-bar {
+  margin-bottom: 10px;
+}
+
+.skill-bar span {
+  display: block;
+  margin-bottom: 4px;
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+.bar {
+  height: 8px;
+  background: #2c2c2c;
+  border-radius: 4px;
+}
+
+.fill {
+  height: 100%;
+  background: #fbbf24;
+  border-radius: 4px;
+}
+
+.resume {
+  text-align: center;
+}
+
+.projects .project-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.projects .card {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  margin: 1rem;
+}
+
+.projects .card h3 {
+  color: #fbbf24;
+  font-size: 2rem;
+}
+
+.projects .more a {
+  color: #fbbf24;
+  text-decoration: none;
+}
+
+.contact .contact-info div {
+  margin-bottom: 1rem;
+}
+
+.contact .social a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #fbbf24;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #1a1a1a;
+  color: #ccc;
+  margin-top: 2rem;
+}
