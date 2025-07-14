@@ -103,9 +103,19 @@ p {
 
 .btn.yellow {
   background-color: #fbbf24;
-  color: #000000 !important;
+  color: #000 !important;   /* <- This makes text black */
   border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
 }
+.btn.yellow a {
+  color: #000 !important;
+}
+
 
 .btn.black {
   background-color: #333;
