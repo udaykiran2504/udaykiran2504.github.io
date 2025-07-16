@@ -54,16 +54,55 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 8%;
-  background-color: #111;
+  background-color: #1f1e1e;
 }
 .hero-img img,
 .about-left img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
+  width: 400px;
+  height: 350px;
+  border-radius: 15%;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* optional: adds soft shadow */
 }
+
+/* First Image - Square Profile Picture */
+/* First Image - Square */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 8%;
+}
+
+.about-left,
+.about-right {
+  flex: 1 1 300px;
+}
+
+.SP {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.about-desc {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.banner-img {
+  width: 100%;
+  height: 350px; /* adjust this to your preferred height */
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
 
 
 
@@ -98,6 +137,13 @@ p {
   gap: 1rem;
   flex-wrap: wrap;
 }
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+
 
 /* ========== Buttons ========== */
 .btn {
@@ -176,10 +222,41 @@ p {
 .resume {
   text-align: center;
   padding: 4rem 8%;
-  background-color: #111;
+  background-color: #11111176;
 }
 
 /* ========== Projects Section ========== */
+
+.project-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .btn {
+  margin-top: 0.5rem;
+}
+
 .projects {
   text-align: center;
   padding: 4rem 8%;
@@ -239,4 +316,79 @@ footer {
   background: #1a1a1a;
   color: #ccc;
   margin-top: 2rem;
+}
+/* ---------- ABOUT SECTION LAYOUT FIX ---------- */
+.about {
+  padding: 4rem 8%;
+  background-color: #111; /* or use the same color used in other sections */
+  color: #eee;
+}
+
+
+.about-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.about-left, .about-right {
+  flex: 1 1 45%;
+  min-width: 300px;
+}
+
+.about-left img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.about-left ul, .about-right ul.details {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.about-left li, .about-right li {
+  margin-bottom: 0.6rem;
+  color: #eee;  /* ✅ Light text for dark background */
+}
+
+.about-right p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #ddd;  /* ✅ Slightly softer white */
+}
+
+
+/* ---------- SECTION TITLE HEADING STYLE ---------- */
+.section-title {
+  position: relative;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); /* Center it perfectly */
+  font-size: 5rem;
+  font-weight: 700;
+  color: rgba(196, 191, 191, 0.1);
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
 }
